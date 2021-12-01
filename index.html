@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Bankist Website</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="navbar">
+      <nav class="container">
+        <div class="navbar__logo">
+          <img src="./img/undraw_lost_online_re_upmy.svg" alt="working late" />
+          <p>bankist</p>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link">
+            <a class="link" href="#feature">features</a>
+          </li>
+          <li class="navbar__link">
+            <a class="link" href="#tabbed">operations</a>
+          </li>
+          <li class="navbar__link">
+            <a class="link" href="#credit">testimonials</a>
+          </li>
+          <a href="" class="navbar__link"
+            ><button class="navbar__btn link">open account</button></a
+          >
+        </ul>
+        <div class="navbar__ham">
+          <div class="navbar__icon"></div>
+        </div>
+      </nav>
+    </header>
+    <section id="banner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="banner__desc">
+            <h1>When <span>banking</span> meets <span>minimalist</span></h1>
+            <!--commnent -->
+            <p>A simpler banking experience for a simpler life</p>
+            <a href="#" class="learn_more"
+              >Learn more <i class="fas fa-arrow-down"></i
+            ></a>
+          </div>
+          <div class="banner__img">
+            <img
+              src="img/undraw_joyride_re_968t.svg"
+              data-src="img/undraw_joyride_re_968t.svg"
+              alt="joyride"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feature">
+      <div class="container">
+        <div class="wrapper">
+          <div class="feature__heading">
+            <h2>features</h2>
+            <p>Everything you need in a modern bank and more.</p>
+          </div>
+          <div class="feature__cards">
+            <div class="feature__cards__img">
+              <img
+                src="./img/undraw_designer_girl_re_h54c.svg"
+                data-src="./img/undraw_designer_girl_re_h54c.svg"
+                alt="designer girl"
+              />
+            </div>
+            <div class="feature__cards__desc">
+              <div class="feature__card__desc__logo">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h2>100% digital bank</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Maecenas porttitor congue massa. Fusce posuere, magna sed
+                pulvinar ultricies, purus lectus malesuada libero, sit amet
+                commodo magna eros quis urna.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="money">
+      <div class="wrapper">
+        <div class="money__desc feature__cards__desc">
+          <div class="feature__card__desc__logo">
+            <ion-icon name="analytics-outline"></ion-icon>
+          </div>
+          <h2>Watch your money grow</h2>
+          <p>
+            Nesciunt quos autem dolorum volupates cum dolores dicta fuga
+            inventore ab? Nulla incidunt euis numquam sequi iste pariratur
+            quibusdam!
+          </p>
+        </div>
+        <div class="money__img feature__cards__img">
+          <img
+            src="img/undraw_digital_nomad_re_w8uy.svg"
+            data-src="img/undraw_digital_nomad_re_w8uy.svg"
+            alt="workspace"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="credit">
+      <div class="wrapper">
+        <div class="credit__desc feature__cards__desc">
+          <div class="credit__desc__logo feature__card__desc__logo">
+            <i class="far fa-credit-card"></i>
+          </div>
+          <h2>Free debit card included</h2>
+          <p>
+            Nesciunt quos autem dolorum volupates cum dolores dicta fuga
+            inventore ab? Nulla incidunt euis numquam sequi iste pariratur
+            quibusdam!
+          </p>
+        </div>
+        <div class="credit__img feature__card__img">
+          <img
+            src="img/undraw_social_interaction_re_dyjh.svg"
+            data-src="img/undraw_social_interaction_re_dyjh.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="tabbed">
+      <div class="container">
+        <div class="wrapper">
+          <div class="tabbed__heading">
+            <h2>operations</h2>
+            <p>Everything as simple as possible, but no simpler.</p>
+          </div>
+          <div class="tabbed__desc">
+            <div class="tabbed__desc__list">
+              <p>Choose operations</p>
+              <div class="tabbed__desc__list__load"></div>
+            </div>
+            <div class="tabbed__buttons hidden">
+              <button class="tabbed__button__item active__button" data-tab="1">
+                <span>01</span> Instant transfers
+              </button>
+              <button class="tabbed__button__item" data-tab="2">
+                <span>02</span> instant loans
+              </button>
+              <button class="tabbed__button__item" data-tab="3">
+                <span>03</span> instant closing
+              </button>
+            </div>
+            <div class="tabbed__desc__container">
+              <div class="tabbed__desc__container__detail open__detail">
+                <div class="feature__card__desc__logo yellow">
+                  <i class="fas fa-upload"></i>
+                </div>
+                <div class="text-content">
+                  <h2>Transfer money to anyone, instantly! No fees, no BS</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                </div>
+              </div>
+              <div class="tabbed__desc__container__detail">
+                <div class="feature__card__desc__logo green">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="text-content">
+                  <h2>
+                    Buy a home or make your dreams come true, with instant
+                    loans.
+                  </h2>
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <div class="tabbed__desc__container__detail">
+                <div class="feature__card__desc__logo orange">
+                  <i class="fas fa-user-times"></i>
+                </div>
+                <div class="text-content">
+                  <h2>
+                    No longer need your account? No problem! Close it instantly
+                  </h2>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.click
+                    melorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slide">
+      <div class="wrapper">
+        <div class="slide__container">
+          <div class="slide__container__detail">
+            <div class="slide__desc">
+              <h2 class="slide__desc_heading">Best finacial decision ever!</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div class="slide__avatar">
+              <div class="slide__avatar__img">
+                <img src="img/Beautiful Face 233.png" alt="" />
+              </div>
+              <div class="slide__avatar__desc">
+                <h3>Aarav Lynn</h3>
+                <p>San Francisco, USA</p>
+                <div class="arrow__down"><i class="fas fa-arrow-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container__detail slide__hidden__down">
+            <div class="slide__desc">
+              <h2 class="slide__desc_heading">Finally, free from school-old banks</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+            <div class="slide__avatar">
+              <div class="slide__avatar__img">
+                <img src="img/VELUNA [SELESAI].jfif" alt="" />
+              </div>
+              <div class="slide__avatar__desc">
+                <h3>Francisco Gomes</h3>
+                <p>Lisbon, Portugal</p>
+                <div class="arrow__down"><i class="fas fa-arrow-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container__detail slide__hidden__down">
+            <div class="slide__desc">
+              <h2 class="slide__desc_heading">The last step to becaming a complete mininalist</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+            <div class="slide__avatar">
+              <div class="slide__avatar__img">
+                <img src="img/tải xuống (1).jfif" alt="" />
+              </div>
+              <div class="slide__avatar__desc">
+                <h3>Francisco Gomes</h3>
+                <p>Lisbon, Portugal</p>
+                <div class="arrow__down"><i class="fas fa-arrow-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow__left">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="arrow__right">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
