@@ -76,7 +76,6 @@ load.addEventListener('animationend', (e)=>{
 });
 list_tabs.addEventListener('click', (e)=>{
     const target = e.target;
-    console.log(target);
     if(target){
        let button = target.closest('.tabbed__button__item');
         buttons.forEach(btn=>btn.classList.remove("active__button"));
@@ -145,7 +144,6 @@ nav.addEventListener('mouseout', fadeMenu.bind(1));
 const sections = document.querySelectorAll('section');
 function revealSection(entries, observe){
     const [first] = entries;
-    console.log(first);
     if(!first.isIntersecting) return;
     first.target.classList.remove('feature__hidden');
     observe.unobserve(first.target);
@@ -154,7 +152,6 @@ const sectionScroll = new IntersectionObserver(revealSection, {
     root: null,
     threshold: 0.15
 });
-console.log(sections);
 sections.forEach(section=>{
     if(section!=sections[sections.length -1]){
         sectionScroll.observe(section);
@@ -200,4 +197,3 @@ function slideDown(e){
     }
 }
 slide_container.addEventListener('click', slideDown);
-
