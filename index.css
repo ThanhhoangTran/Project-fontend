@@ -673,7 +673,7 @@ div[class^="arrow"] {
     transform: translateY(100%);
 }
 @media (min-width: 62em){
-    #slide {
+    /* #slide {
         transform: scale(0.5);
     }
     .slide__container {
@@ -721,5 +721,5 @@ div[class^="arrow"] {
     }
     .arrow__down {
         display: none;
-    }
+    } */
 }
